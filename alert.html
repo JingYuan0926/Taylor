@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    <h1>You got scammed</h1>
+    <p></p>
+
+    <div class="alert">
+        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+        <strong>Alert!</strong> Do not press any suspicious link next time.
+    </div>
+
+    <style>
+        .alert {
+            padding: 20px;
+            background-color: #f44336;
+            color: white;
+            margin: 20px;
+        }
+
+        .closebtn {
+            margin-left: 15px;
+            color: white;
+            font-weight: bold;
+            float: right;
+            font-size: 22px;
+            line-height: 20px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .closebtn:hover {
+            color: black;
+        }
+    </style>
+    <script>
+        window.onload = function() {
+            var username = localStorage.getItem('username');
+            var password = localStorage.getItem('password');
+        
+            // Use the username and password
+            console.log(username, password);
+        };
+    </script>
+</body>
+</html>
